@@ -24,7 +24,7 @@ class HeartbeatCF():
     
     def __init__(self):
         dataset = []
-        for folder in ["/home/jovyan/work/capstone/heartbeat-sounds/set_a/**","/home/jovyan/work/capstone/heartbeat-sounds/set_b/**"]:
+        for folder in ["./heartbeat-sounds/set_a/**","./heartbeat-sounds/set_b/**"]:
             for filename in glob.iglob(folder):
                 if os.path.exists(filename):
                     label = os.path.basename(filename).split("_")[0]
