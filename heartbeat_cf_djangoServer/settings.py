@@ -25,12 +25,12 @@ SECRET_KEY = 'el8lsd!+t5#7-tvz!oca#%k+=&$^nb6!*8p0^k8)2iuc0g3pg-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = "*"
 
 # Application definition
 
 INSTALLED_APPS = [
+    'task.apps.TaskConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+        django:
+                image: area409/heartbeat_cf:0.4
+                build:
+                        context: .
+                        dockerfile: ./Dockerfile
+                ports:
+                        - "9090:80"
+                volumes:
+                        - .:/app
+                        - /home/area409/originServer/0609/PHAS_Backend/heartbeat_noseReduce_data:/app/heartbeat_cf_data
